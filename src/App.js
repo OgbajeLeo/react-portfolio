@@ -14,7 +14,7 @@ function App() {
       <Home />
       <About />
       <Portfolio />
-      <Experience />
+      <Experience className='sm:text-center sm:items-center'/>
       <Contact />
       <Footer />
       <SocialLinks />

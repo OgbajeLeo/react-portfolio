@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaPhone } from "react-icons/fa";
 
-//function for form reset
-function handleSubmit(e){
-  setTimeout(() => {
-    e.target.reset();
-  }, 3000);
-}
 
 const Contact = () => {
+  const [isLoading,setIsLoading]= useState(false)
+
+
+  
+//function for form reset
+function handleSubmit(e){
+  setIsLoading(true)
+  setTimeout(() => {
+    e.target.reset();
+    setIsLoading(false)
+  }, 3000);
+}
   return (
     <div
       name="contact"
@@ -15,10 +22,10 @@ const Contact = () => {
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Contact
+          <p className="text-4xl font-bold flex gap-4">
+           <FaPhone /> Contact
           </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
+          <p className="py-6"> Need a web developer ? Submit the form below to get in touch with me</p>
         </div>
         
         <div className=" flex justify-center items-center">
@@ -26,7 +33,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
             name="contact"
             method="POST"
-            action="https://getform.io/f/a5bbeab4-3505-457e-bcda-603c8bc15711"
+            action="https://getform.io/f/79f8d259-478f-4bcb-bb3e-7e3e0fbd2535"
             className=" flex flex-col w-full md:w-1/2"
           >
             <input
@@ -51,8 +58,10 @@ const Contact = () => {
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 
-            <button type="submit" className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-              Send Message
+            <button type="submit" 
+            disabled={isLoading}
+            className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+              {isLoading?'Sending...':'Send Message'}
             </button>
           </form>
         </div>
