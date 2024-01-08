@@ -33,7 +33,7 @@ function handleSubmit(e){
             onSubmit={handleSubmit}
             name="contact"
             method="POST"
-            action="https://getform.io/f/79f8d259-478f-4bcb-bb3e-7e3e0fbd2535"
+            action="https://getform.io/f/aebabb94-27bc-404a-9e86-e1433d87ca4a"
             className=" flex flex-col w-full md:w-1/2"
           >
             <input
