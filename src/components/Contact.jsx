@@ -1,6 +1,7 @@
 import React, { useEffect, useRef,useState } from "react";
 import { FaPhone } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 
 const Contact = () => {
@@ -21,16 +22,47 @@ function handleSubmit(e){
 
   emailjs.sendForm(serviceID, templateID, form.current, 'tzNBPOYcCpnQxURaP')
     .then((result) => {
-        alert("send",result)
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Message sent successfully"
+      });
+
+      e.target.reset();
+    setIsLoading(false)
     }, (error) => {
-        // show the user an error
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "error",
+        title: "Error, Please try again !"
+      });
     });
 
 
-  setTimeout(() => {
-    e.target.reset();
-    setIsLoading(false)
-  }, 5000);
+  // setTimeout(() => {
+  //   e.target.reset();
+  //   setIsLoading(false)
+  // }, 5000);
 }
   return (
     <div
