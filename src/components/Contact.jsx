@@ -1,19 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef,useState } from "react";
 import { FaPhone } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
   const [isLoading,setIsLoading]= useState(false)
 
+  const serviceID ='service_oecgc0m'
+  const templateID ='template_sv1spgt'
+  const form = useRef();
 
+  useEffect(() => emailjs.init("tzNBPOYcCpnQxURaP"), []);
+  
   
 //function for form reset
 function handleSubmit(e){
   setIsLoading(true)
+  
+  e.preventDefault(); // prevents the page from reloading when you hit “Send”
+
+  emailjs.sendForm(serviceID, templateID, form.current, 'tzNBPOYcCpnQxURaP')
+    .then((result) => {
+        alert("send",result)
+    }, (error) => {
+        // show the user an error
+    });
+
+
   setTimeout(() => {
     e.target.reset();
     setIsLoading(false)
-  }, 3000);
+  }, 5000);
 }
   return (
     <div
@@ -30,22 +47,25 @@ function handleSubmit(e){
         
         <div className=" flex justify-center items-center">
           <form
+            ref={form}
             onSubmit={handleSubmit}
-            name="contact"
+            name="contact_form"
             method="POST"
-            action="https://getform.io/f/b1bacef8-e9a0-43e0-a40a-67c1f2635986"
+            // action="https://getform.io/f/b1bacef8-e9a0-43e0-a40a-67c1f2635986"
             className=" flex flex-col w-full md:w-1/2"
           >
+
+            <input type="hidden" name="contact_number" />
             <input
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Enter your name"
               required
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <input
               type="email"
-              name="email"
+              name="user_email"
               placeholder="Enter your email"
               required
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
