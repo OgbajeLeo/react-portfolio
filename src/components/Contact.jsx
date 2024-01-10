@@ -56,6 +56,8 @@ function handleSubmit(e){
         icon: "error",
         title: "Error, Please try again !"
       });
+      e.target.reset();
+      setIsLoading(false)
     });
 
 

@@ -1,9 +1,12 @@
 import React from "react";
+import { FaDownload } from "react-icons/fa";
+import resume from "../assets/resume.pdf"
 // import HeroImage from "../assets/heroImage.png";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
 
 const Home = () => {
+
+  const download= true;
+  const href=resume
   return (
     <div
       name="home"
@@ -23,24 +26,26 @@ const Home = () => {
           </h2>
           <p className="text-gray-500 py-4 max-w-md text-xl">A Frontend Developer
 who crafts and build virtually appealing websites and Products that help your business grow online
-            I love to work on web application using technologies like Javascript
-            React, Tailwind, and Next JS.
+            I love to work on web application using technologies like HTML,CSS, Javascript,TailwindCSS, and React
           </p>
 
-          <div className="portfolio-btn ">
-            <Link
-              to="portfolio"
-              smooth
-              duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+          <div className="portfolio-btn">
+
+            <a
+              href={href}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer" 
+              download={download}
+              target="_blank"
+              rel="noreferrer"
             >
               Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+              <span className="group-hover:rotate-270 duration-300">
+                <FaDownload size={20} className="ml-1" />
               </span>
-            </Link>
+            </a>
           </div>
-        </div>
+          </div>
+
         <div className="big-screen">
           <img
             src='https://res.cloudinary.com/duw4jtxls/image/upload/v1704680752/IMG-20230721-WA0038-removebg-preview_1_a9pljf.png'
