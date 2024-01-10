@@ -13,7 +13,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://linkedin.com/in/Ogbajeleo",
-      style: "rounded-tr-md hover:bg-blue-600",
+      style: "rounded-tr-md hover:bg-blue-700",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "mailto:leonardaromeh@gmail.com",
-      style: "rounded-tr-md hover:bg-red-600 hover:animate-pulse",
+      style: "rounded-tr-md hover:bg-red-400 hover:animate-pulse",
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ const SocialLinks = () => {
         </>
       ),
       href: resume,
-      style: "rounded-br-lg hover:bg-green-900 hover:animate-pulse",
+      style: "rounded-br-lg hover:bg-green-600 hover:animate-pulse",
       download: true,
     },
     {
@@ -55,7 +55,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://twitter.com/Omaebije",
-      style: "rounded-br-lg hover:bg-blue-400 hover:animate-pulse",
+      style: "rounded-br-lg hover:bg-blue-500 hover:animate-pulse",
     },
   ];
 
@@ -67,8 +67,7 @@ const SocialLinks = () => {
             key={id}
             className={
               "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-600 hover:bg-gray-900" +
-              " " +
-              style
+              " " +style
             }
           >
             <a
