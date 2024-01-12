@@ -18,7 +18,7 @@ const TypingAnimation = ({text}) => {
       return () => clearInterval(intervalId);
     }, [text]);
   
-    return <span>{displayText}</span>;
+    return <span className='text-blue-300'>{displayText}</span>;
   
 }
 

@@ -39,7 +39,7 @@ const Portfolio = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 lg:mt-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500 mt-4">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 mt-4 text-blue-300">
             Portfolio
           </p>
           <p className="py-6">Check out some of my work right here</p>
@@ -53,7 +53,7 @@ const Portfolio = () => {
                 alt="projects"
                 className="rounded-md duration-200 hover:scale-105 sm:h-[50%] lg:h-[55%]"
               />
-              <div className="text-center text-sm p-2">{description}</div>
+              <div className="text-center text-gray-400 text-sm p-2">{description}</div>
               <div className="flex items-center justify-center text-sm ">
                 <button className="w-1/2  border-2 rounded-full py-2 m-4 duration-200 hover:scale-105" onClick={ () => window.open(link, '_blank')}>
                   Demo
