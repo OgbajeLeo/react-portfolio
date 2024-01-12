@@ -37,7 +37,7 @@ const NavBar = () => {
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="https://rahulkarda.netlify.app">Rahul</a></h1> */}
-        <h1 className="text-5xl font-signature ml-2"><a className="link-underline link-underline-black hover:animate-pulse" href="https://ogbajeleo.vercel.app" target="_blank" rel="noreferrer">Ogbaje Leo</a></h1>
+        <h1 className="sm:text-5xl lg:text-5xl md:text-3xl font-signature ml-2"><a className="link-underline link-underline-black hover:animate-pulse" href="https://ogbajeleo.vercel.app" target="_blank" rel="noreferrer">Ogbaje Leo</a></h1>
       </div>
 
       <ul className="hidden md:flex">

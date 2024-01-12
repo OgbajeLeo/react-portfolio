@@ -99,7 +99,7 @@ function handleSubmit(e){
                                 </svg>
                             </div>
 
-                            <div className="ml-4 mb-4">
+                            <div className="ml-4 mb-4 md:text-left">
                                 <lee className="mb-2 text-xl font-medium leading-6 text-blue-300 dark:text-white">Address
                                 </lee>
                                 <p className=" dark:text-slate-400">Abuja,FCT</p>
@@ -119,10 +119,10 @@ function handleSubmit(e){
                                 </svg>
                             </div>
 
-                            <div className="ml-4 mb-4">
+                            <div className="ml-4 mb-4 md:text-left">
                                 <lee className="mb-2 text-xl font-medium leading-6 text-blue-300 dark:text-white">Contact
                                 </lee>
-                                <p className=" dark:text-slate-400">Mobile: +234 9036787860</p>
+                                <p className=" dark:text-slate-400">Mobile: +2349036787860</p>
                                 <p className=" dark:text-slate-400">Mail: leonardaromeh@gmail.com</p>
                             </div>
                         </li>
@@ -136,7 +136,7 @@ function handleSubmit(e){
                                 </svg>
                             </div>
 
-                            <div className="ml-4 mb-4">
+                            <div className="ml-4 mb-4 md:text-left">
                                 <lee className="mb-2 text-xl font-medium leading-6 text-blue-300 dark:text-white">Working
                                     hours</lee>
                                 <p className=" dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>

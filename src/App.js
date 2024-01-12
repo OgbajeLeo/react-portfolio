@@ -1,24 +1,29 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Home from "./components/Home";
-import NavBar from "./components/NavBar";
-import Portfolio from "./components/Portfolio";
-import SocialLinks from "./components/SocialLinks";
-import Footer from "./components/Footer"
+import  { ThreeDots } from 'react-loader-spinner';
+import { useEffect, useState } from "react";
+import MainContent from "./components/MainContent";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+  
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 5000);
+  }, []);
   return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Experience className='sm:text-center sm:items-center'/>
-      <Contact />
-      <Footer />
-      <SocialLinks />
-    </div>
+    <>
+    {isLoading?
+    <div className='flex justify-center items-center min-h-screen'>
+    <ThreeDots
+    type="Puff" 
+    color="#00BFFF" 
+    height={100} 
+    width={100}
+    // className="flex justify-center items-center h-100vh"
+    /></div>:<MainContent />}
+  
+  </>
   );
 }
 

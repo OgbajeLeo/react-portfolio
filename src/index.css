@@ -12,10 +12,10 @@
   }
 }
 
-#root {
+/* #root {
   background: linear-gradient(black 25%, rgb(31, 41, 54) 58%, black 15%);
   min-height: 100vh;
-}
+} */
 
 body {
   background: rgb(31, 41, 55);
