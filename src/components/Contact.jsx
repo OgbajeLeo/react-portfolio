@@ -82,7 +82,7 @@ function handleSubmit(e){
         
         <div className="flex justify-between items-center">
 
-        <div className="hidden lg:block h-full lg:w-1/2 text-white pr-8">
+        <div className="hidden md:block lg:block h-full lg:w-1/2 text-white pr-8">
                     <p className="hidden lg:block mt-3 mb-12 text-lg text-white dark:text-slate-400">
                     Need a web developer ? Submit the form below to get in touch with me
                     </p>
