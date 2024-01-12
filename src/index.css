@@ -64,10 +64,10 @@ body {
 
 @media screen and (max-width: 900px) {
 
-  #root {
+  /* #root {
     background: linear-gradient(rgb(31, 41, 55) 20%, black 20%, rgb(31, 41, 55) 65%, black 25%);
     min-height: 100vh;
-  }
+  } */
 
   .about,
   .contact,

@@ -20,7 +20,6 @@ function App() {
     color="#00BFFF" 
     height={100} 
     width={100}
-    // className="flex justify-center items-center h-100vh"
     /></div>:<MainContent />}
   
   </>
