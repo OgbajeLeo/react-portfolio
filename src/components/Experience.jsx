@@ -1,5 +1,6 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos"
+import 'aos/dist/aos.css';
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -11,6 +12,11 @@ import node from "../assets/node.png";
 import { FaPeopleCarry } from "react-icons/fa";
 
 const Experience = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const techs = [
     {
       id: 1,
@@ -67,17 +73,21 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen experience"
+      className="bg-gradient-to-b from-gray-900 to-black w-full h-screen experience"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div className="">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500 mt-4 text-blue-300">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 text-blue-300">
            Experience
           </p>
           <p className="py-6">These are the technologies I've worked with and used in my projects.</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
+        <div 
+        data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"
+        className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}

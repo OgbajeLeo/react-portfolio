@@ -10,16 +10,16 @@ import About from './About'
 
 const MainContent = () => {
   return (
-    <div>
+    <>
       <NavBar />
       <Home />
       <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
+      <div className="mt-[-40px] md:mt-[-84px] lg:mt-[-101px]" ><Portfolio /></div>
+      <div className="mt-[-40px] md:mt-[-84px] lg:mt-[-152px]" ><Experience /></div>
+      <div className="mt-[-40px] lg:mt-[-101px]" ><Contact /></div>
       <Footer />
       <SocialLinks />
-    </div>
+    </>
   )
 }
 

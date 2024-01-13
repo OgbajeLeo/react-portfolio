@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaGithub, Faaedin, FaTwitter, FaLinkedin, FaMedium, FaMediumM, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { a } from "react-scroll";
 
 function Footer(){
