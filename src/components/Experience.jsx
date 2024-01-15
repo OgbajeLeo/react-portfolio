@@ -5,11 +5,12 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
+// import nextjs from "../assets/nextjs.png";
 import github from "../assets/github.png";
+import figma from "../assets/figma.png"
 import tailwind from "../assets/tailwind.png";
 import node from "../assets/node.png";
-import { FaPeopleCarry } from "react-icons/fa";
+// import { FaPeopleCarry } from "react-icons/fa";
 
 const Experience = () => {
 
@@ -50,19 +51,19 @@ const Experience = () => {
     },
     {
       id: 6,
-      src: nextjs,
-      title: "Next JS",
-      style: "shadow-white",
+      src: figma,
+      title: "Figma",
+      style: "shadow-pink-600",
     },
     
     {
-      id: 8,
+      id: 7,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
     {
-      id: 9,
+      id: 8,
       src: tailwind,
       title: "TailwindCSS",
       style: "shadow-sky-400",
