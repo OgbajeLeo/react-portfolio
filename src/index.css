@@ -74,6 +74,7 @@ body {
   .about,
   .contact,
   .portfolio,
+  .services,
   .experience,
   .home {
     text-align: center;
@@ -81,7 +82,7 @@ body {
   }
 
   .about,
-  .portfolio,
+  .portfolio,.services,
   .experience {
     margin-top: 10%;
   }
