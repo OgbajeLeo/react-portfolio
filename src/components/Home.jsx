@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaDownload } from "react-icons/fa";
 import resume from "../assets/resume.pdf"
 import TypingAnimation from "./TypingAnimation";
+import AOS from "aos"
+import 'aos/dist/aos.css';
 // import HeroImage from "../assets/heroImage.png";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   const download= true;
   const href=resume
@@ -12,7 +17,10 @@ const Home = () => {
     <div
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home md:pt-10">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
+      <div 
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
         <div className="small-screen hidden">
           <img
             src="https://res.cloudinary.com/duw4jtxls/image/upload/v1704680752/IMG-20230721-WA0038-removebg-preview_1_a9pljf.png"

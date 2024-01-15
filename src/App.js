@@ -1,6 +1,7 @@
 import  { ThreeDots } from 'react-loader-spinner';
 import { useEffect, useState } from "react";
 import MainContent from "./components/MainContent";
+// import './index.css'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
