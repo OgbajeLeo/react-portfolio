@@ -4,6 +4,7 @@ import apod from "../assets/portfolio/apod.jpg";
 import webpostman from "../assets/portfolio/webpostman.jpg";
 
 
+
 const Portfolio = () => {
   const portfolios = [
     {
@@ -58,7 +59,8 @@ const Portfolio = () => {
                 <button className="w-1/2  border-2 rounded-full py-2 m-4 duration-200 hover:scale-105" onClick={ () => window.open(link, '_blank')}>
                   Demo
                 </button>
-                <button className="w-1/2 px-2 border-2 rounded-full  py-2 m-4 duration-200 hover:scale-105" onClick={ () => window.open(repo, '_blank')}>
+                <button className={id===1? "hidden" :"w-1/2  px-2 border-2 rounded-full  py-2 m-4 duration-200 hover:scale-105" } 
+                onClick={ () => window.open(repo, '_blank')}>
                   GitHub
                 </button>
               </div>

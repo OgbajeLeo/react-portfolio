@@ -30,7 +30,7 @@ const About = () => {
           data-aos="fade-up"
           data-aos-duration="3000"
           className=" lg:text-xl text-justify">
-        I am Ogbaje Leo Arome, a passionate and creative frontend developer with a keen eye for design. My journey in web development started From an early age, I had an insatiable curiosity for technology and a passion for creating things. As a child, I would spend hours tinkering with computers and exploring the wonders of the internet. Little did I know that this fascination would eventually lead me to a fulfilling career in web development.. I am proficient in HTML, CSS, Git & Github JavaScript,  and I have experience working with various frontend frameworks like React and Vue.js. <br /><br />
+        I am Ogbaje Leo Arome, a passionate and creative frontend developer with a keen eye for design. My journey in web development started From an early age, I had an insatiable curiosity for technology and a passion for creating things. As a child, I would spend hours tinkering with computers and exploring the wonders of the internet. Little did I know that this fascination would eventually lead me to a fulfilling career in web development.. I am proficient in HTML, CSS, Git & Github JavaScript,  and React. <br /><br />
 
 In my projects, I strive to create engaging and user-friendly experiences by combining my technical skills with a strong understanding of user experience principles. I am a continuous learner, always seeking opportunities to enhance my skills and stay up-to-date with the latest web technologies. <br /><br />
 
