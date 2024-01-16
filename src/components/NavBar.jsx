@@ -18,7 +18,7 @@ const NavBar = () => {
     },
     {
       id: 3,
-      link: "portfolio",
+      link: "projects",
       icon:<FaPodcast /> ,
     },
     {
