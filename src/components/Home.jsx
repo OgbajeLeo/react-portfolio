@@ -47,7 +47,7 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Portfolio
+              Resume
               <span className="group-hover:rotate-270 duration-300">
                 <FaDownload size={20} className="ml-1" />
               </span>
