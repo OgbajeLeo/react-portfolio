@@ -12,7 +12,9 @@ const Contact = () => {
   const templateID = "template_sv1spgt";
   const form = useRef();
 
-  useEffect(() => emailjs.init("tzNBPOYcCpnQxURaP"), []);
+  useEffect(() =>
+    emailjs.init("tzNBPOYcCpnQxURaP"),
+    []);
 
   useEffect(() => {
     AOS.init();
@@ -81,7 +83,7 @@ const Contact = () => {
           <p data-aos="fade-right"
             data-aos-duration="3000" className="py-6 block lg:hidden">
             {" "}
-            Need a web developer ? Submit the form below to get in touch with me
+            Need a web developer ? I am only a DM away
           </p>
         </div>
 

@@ -36,7 +36,7 @@ const NavBar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
       <div>
-        {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="https://rahulkarda.netlify.app">Rahul</a></h1> */}
+        {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="https://rahulkarda.netlify.app">Lee</a></h1> */}
         <h1 className="sm:text-5xl lg:text-5xl md:text-3xl font-signature ml-2"><a className="link-underline link-underline-black hover:animate-pulse" href="https://ogbajeleo.vercel.app" target="_blank" rel="noreferrer">Ogbaje Leo</a></h1>
       </div>
 
@@ -44,7 +44,7 @@ const NavBar = () => {
         {links.map(({ id, link,icon }) => (
           <li
             key={id}
-            className="nav-links px-5 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-blue-300 hover:font-bold duration-200"
+            className="nav-links px-5 cursor-pointer capitalize font-medium text-white hover:scale-105 hover:text-blue-300 hover:font-bold duration-200"
           >
             <Link to={link} smooth duration={500}>
               <div className="flex items-center justify-center gap-2">{icon} {link}</div>
@@ -61,7 +61,7 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white">
           {links.map(({ id, link,icon }) => (
             <li
               key={id}
